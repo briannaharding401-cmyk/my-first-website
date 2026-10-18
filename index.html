@@ -1,12 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My-first-site</title>
-</head>
-<body>
-    <h1>Hi, I'm Bri</h1>
-    <p>This is my website</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bri Harding | Creative Developer</title>
+    <meta
+      name="description"
+      content="A warm, modern personal website for Bri Harding."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">Bri</div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Hi, I'm Bri</p>
+            <h1>Designing thoughtful digital experiences.</h1>
+            <p class="lede">
+              I’m a creative developer focused on building clean, welcoming web
+              experiences that are as useful as they are beautiful.
+            </p>
+            <div class="cta-row">
+              <a class="button primary" href="#work">View my work</a>
+              <a class="button secondary" href="#contact">Say hello</a>
+            </div>
+          </div>
+          <div class="hero-card" aria-label="Profile summary card">
+            <div class="card-badge">Available for projects</div>
+            <h2>Creative • Curious • Thoughtful</h2>
+            <ul>
+              <li>Web design</li>
+              <li>Front-end development</li>
+              <li>Brand storytelling</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container split">
+          <div>
+            <p class="section-tag">About</p>
+            <h2>Making the digital world feel a little more human.</h2>
+          </div>
+          <p>
+            I create websites that blend strategy, visual clarity, and user-friendly
+            design. My goal is simple: build experiences that help people feel
+            confident, informed, and inspired.
+          </p>
+        </div>
+      </section>
+
+      <section id="work" class="section alt">
+        <div class="container">
+          <p class="section-tag">Selected work</p>
+          <div class="card-grid">
+            <article class="info-card">
+              <span>01</span>
+              <h3>Portfolio refresh</h3>
+              <p>
+                Reimagined a personal brand with a cleaner layout, stronger visual
+                hierarchy, and more inviting storytelling.
+              </p>
+            </article>
+            <article class="info-card">
+              <span>02</span>
+              <h3>Landing page design</h3>
+              <p>
+                Built a bold marketing page to showcase services and help visitors
+                quickly understand the value proposition.
+              </p>
+            </article>
+            <article class="info-card">
+              <span>03</span>
+              <h3>Brand identity</h3>
+              <p>
+                Developed visual direction and content structure for creative,
+                approachable digital brands.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-box">
+          <div>
+            <p class="section-tag">Get in touch</p>
+            <h2>Let’s build something beautiful together.</h2>
+          </div>
+          <a class="button primary" href="mailto:hello@example.com">hello@example.com</a>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
